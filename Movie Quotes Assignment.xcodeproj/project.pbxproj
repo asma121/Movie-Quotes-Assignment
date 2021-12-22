@@ -13,6 +13,9 @@
 		840CE24227736C21004C0A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840CE24027736C21004C0A64 /* Main.storyboard */; };
 		840CE24427736C24004C0A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840CE24327736C24004C0A64 /* Assets.xcassets */; };
 		840CE24727736C24004C0A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840CE24527736C24004C0A64 /* LaunchScreen.storyboard */; };
+		840CE24F27736CC7004C0A64 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CE24E27736CC7004C0A64 /* ShowViewController.swift */; };
+		840CE25127736DA4004C0A64 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CE25027736DA4004C0A64 /* CollectionViewCell.swift */; };
+		840CE25427739178004C0A64 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 840CE25327739178004C0A64 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		840CE24327736C24004C0A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840CE24627736C24004C0A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840CE24827736C24004C0A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840CE24E27736CC7004C0A64 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		840CE25027736DA4004C0A64 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840CE25427739178004C0A64 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 				840CE23A27736C21004C0A64 /* AppDelegate.swift */,
 				840CE23C27736C21004C0A64 /* SceneDelegate.swift */,
 				840CE23E27736C21004C0A64 /* ViewController.swift */,
+				840CE24E27736CC7004C0A64 /* ShowViewController.swift */,
+				840CE25027736DA4004C0A64 /* CollectionViewCell.swift */,
 				840CE24027736C21004C0A64 /* Main.storyboard */,
 				840CE24327736C24004C0A64 /* Assets.xcassets */,
 				840CE24527736C24004C0A64 /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "Movie Quotes Assignment";
+			packageProductDependencies = (
+				840CE25327739178004C0A64 /* Kingfisher */,
+			);
 			productName = "Movie Quotes Assignment";
 			productReference = 840CE23727736C21004C0A64 /* Movie Quotes Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 840CE22E27736C21004C0A64;
+			packageReferences = (
+				840CE25227739178004C0A64 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 840CE23827736C21004C0A64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840CE25127736DA4004C0A64 /* CollectionViewCell.swift in Sources */,
 				840CE23F27736C21004C0A64 /* ViewController.swift in Sources */,
 				840CE23B27736C21004C0A64 /* AppDelegate.swift in Sources */,
 				840CE23D27736C21004C0A64 /* SceneDelegate.swift in Sources */,
+				840CE24F27736CC7004C0A64 /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +310,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +338,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		840CE25227739178004C0A64 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		840CE25327739178004C0A64 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840CE25227739178004C0A64 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 840CE22F27736C21004C0A64 /* Project object */;
 }
